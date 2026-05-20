@@ -27,16 +27,8 @@
 				body: formData.toString()
 			});
 
-			// Trigger a premium top-right toast notification
-			toast.success('Registrace proběhla úspěšně!', {
-				description: 'Váš e-mail byl úspěšně zaregistrován.',
-				position: 'top-right'
-			});
-
-			// Smooth redirect after a tiny delay so the user can enjoy the toast animation!
-			setTimeout(() => {
-				goto('/registrace-uspesna');
-			}, 800);
+			// Direct redirect to registration success page
+			goto('/registrace-uspesna');
 		} catch (error) {
 			console.error('Subscription error:', error);
 			toast.error('Něco se nepovedlo. Zkontrolujte prosím připojení.');
