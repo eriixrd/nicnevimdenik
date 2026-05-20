@@ -1,29 +1,33 @@
 <script lang="ts">
-	import '../app.css';
-	import { loadTranslations, locale } from '../translations/config/index';
-	import { onMount } from 'svelte';
-	import Navbar from '../components/layout/navbar.svelte';
-	import Footer from '../components/layout/footer.svelte';
+  import '../app.css';
+  import { onMount } from 'svelte';
+  import Footer from '../components/layout/footer.svelte';
+  import { Toaster } from 'svelte-sonner';
 
-	import { t } from '../translations/config/index'; // Do not remove this import is needed for the translations
+  import { page } from '$app/stores';
 
-	onMount(async () => {
-		const urlParams = new URLSearchParams(window.location.search);
-		const lang = urlParams.get('lang') || 'en';
-		locale.set(lang);
-		await loadTranslations(lang);
-	});
+  onMount(() => {
+    // Initial animations or theme setup
+  });
 </script>
 
-<svelte:head> <!-- Here you can add meta tags, favicon, seo etc. -->
-    <title>SvelteStarterKit - Modern template for quick start</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
+<svelte:head>
+  <title>Svelte Premium Starter — Modern Web Excellence</title>
+  <meta name="description" content="A premium SvelteKit starter kit with modern design, glassmorphism, and high-performance components." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen bg-neutral-950">
-    <Navbar />
-    <main class="flex-1">
-        <slot />
-    </main>
-    <Footer />
+<Toaster richColors position="top-right" />
+
+<div class="min-h-screen bg-bg-dark text-slate-200 flex flex-col">
+  <main class="flex-1">
+    <slot />
+  </main>
+
+  <Footer />
 </div>
+
+<style>
+  :global(body) {
+    overflow-x: hidden;
+  }
+</style>

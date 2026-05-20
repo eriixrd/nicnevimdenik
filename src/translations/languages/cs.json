@@ -1,30 +1,23 @@
 {
   "common": {
       "language": "Změnit jazyk",
-      "projectName": "SvelteStarterKit"
+      "projectName": "Prémiový Svelte Startér"
   },
   "hero": {
-      "title": "SvelteStarterKit",
-      "description": "Moderní šablona pro rychlý start s nejnovějšími technologiemi",
-      "copied": {
-          "title": "Zkopírováno!",
-          "text": "Git příkaz byl zkopírován do schránky"
-      },
-      "tech": {
-          "svelte": "Vytvořeno s výkonným a efektivním frameworkem Svelte a meta-frameworkem SvelteKit",
-          "vite": "Bleskurychlý vývoj s next-generation frontend nástrojem Vite",
-          "tailwind": "Utility-first CSS framework pro rychlý vývoj uživatelského rozhraní",
-          "typescript": "Vylepšený vývojářský zážitek s typovou bezpečností",
-          "sweetalert": "Krásné, responzivní a přizpůsobitelné dialogové okna",
-          "i18n": "Vestavěná podpora pro více jazyků"
+      "badge": "Budoucnost vývoje webu",
+      "title": "Vytvořte své další mistrovské dílo",
+      "description": "Zažijte spojení vysoce výkonné architektury a úchvatného vizuálního designu. Startovací sada navržená pro ty, kteří se nespokojí s průměrem.",
+      "cta": {
+          "primary": "Začít nyní",
+          "secondary": "Dokumentace"
       }
   },
   "footer": {
       "portfolio": "Portfolio",
-      "description": "Naklonuj git a běž tvořit své sny v realitu",
-      "contact": "Kontaktujte mě",
-      "createdBy": "Naprogramoval & Navrhl · ",
+      "description": "Pomáháme vývojářům vytvářet digitální zážitky světové úrovně s precizností a stylem.",
+      "contact": "Kontakt",
+      "createdBy": "Navrženo a vytvořeno s ❤️ · ",
       "welcome": "Všechna práva vyhrazena.",
-      "github": "GitHub repozitář"
+      "github": "Zdrojový kód"
   }
 } 

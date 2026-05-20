@@ -1,113 +1,139 @@
 <script lang="ts">
-    import { fade } from 'svelte/transition';
-    import { onMount } from 'svelte';
-    import { Motion, useMotionValue, useMotionTemplate } from "svelte-motion";
-    import { t } from '../../translations/config/index';
-    import Swal from 'sweetalert2';
-    
-    const technologies = [
-        { id: 'svelte', name: 'SvelteKit', url: 'https://svelte.dev', src: '/logos/sv.png' },
-        { id: 'vite', name: 'Vite', url: 'https://vitejs.dev', src: '/logos/vite.png' },
-        { id: 'tailwind', name: 'Tailwind CSS', url: 'https://tailwindcss.com', src: '/logos/tw.png' },
-        { id: 'typescript', name: 'TypeScript', url: 'https://www.typescriptlang.org', src: '/logos/ts.png' },
-        { id: 'sweetalert', name: 'SweetAlert2', url: 'https://sweetalert2.github.io', src: '/logos/swa.png' },
-        { id: 'i18n', name: 'i18n Support', url: '#', src: '/logos/i18n.png' }
-    ];
-    
-    let mounted = false;
-    onMount(() => {
-        mounted = true;
-    });
-
-    const handleCopy = async () => {
-        await navigator.clipboard.writeText('git clone https://github.com/eriixrd/SvelteStarterKit');
-        await Swal.fire({
-            title: $t('hero.copied.title'),
-            text: $t('hero.copied.text'), 
-            icon: 'success',
-            timer: 1500,
-            showConfirmButton: false,
-            position: 'top-end',
-            toast: true,
-            background: '#1a1a1a',
-            color: '#fff',
-            iconColor: '#0085ff'
-        });
-    };
-
-    const createMotionValues = () => ({
-        mouseX: useMotionValue(0),
-        mouseY: useMotionValue(0),
-        background: useMotionTemplate`radial-gradient(200px circle at ${useMotionValue(0)}px ${useMotionValue(0)}px, rgba(38, 38, 38, 0.4), transparent 80%)`
-    });
-
-    let motionValues = technologies.map(() => createMotionValues());
 </script>
 
-<!-- svelte-ignore a11y_consider_explicit_label -->
-<!-- svelte-ignore element_invalid_self_closing_tag -->
-<section class="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
-    <div class="relative px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
-        <div class="max-w-xl mb-8 md:mx-auto sm:text-center lg:max-w-2xl md:mb-10">
-            {#if mounted}
-            <div in:fade={{ duration: 1000 }}>
-                <div class="mb-8 max-w-2xl mx-auto -mt-2">
-                    <div class="relative flex items-center bg-neutral-900 rounded-lg p-4 font-mono text-sm border border-transparent hover:border-white/10 transition-all duration-300 group">
-                        <code class="text-gray-300 group-hover:text-white transition-colors duration-300">git clone https://github.com/eriixrd/SvelteStarterKit</code>
-                        <button 
-                            class="absolute right-2 p-2 text-gray-400 hover:text-white transition-all duration-300"
-                            on:click={handleCopy}
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+<svelte:head>
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
+</svelte:head>
 
-                <h1 class="max-w-lg mb-2 font-sans text-4xl font-bold leading-none tracking-tight text-white sm:text-6xl md:mx-auto mt-15">
-                    {$t('hero.title')}
-                </h1>
-                <p class="text-base text-gray-300 md:text-lg">
-                    {$t('hero.description')}
-                </p>
-            </div>
-            {/if}
-        </div>
+<section class="bg-[#0C0914] pt-6 pb-15">
+	<div class="relative flex flex-col items-center justify-center w-full max-w-full">
+		<img
+			src="/assets/addpics/logo.png"
+			alt="Logo"
+			class="z-10 h-[80px] w-auto select-none pointer-events-none"
+			draggable="false"
+			loading="lazy"
+			style="max-width:160px; image-rendering: -webkit-optimize-contrast;"
+		/>
 
-        <div class="grid gap-6 row-gap-4 mb-6 md:grid-cols-2 lg:grid-cols-3">
-            {#each technologies as tech}
-                {@const mouseX = useMotionValue(0)}
-                {@const mouseY = useMotionValue(0)}
-                {@const background = useMotionTemplate`radial-gradient(200px circle at ${mouseX}px ${mouseY}px, rgba(38, 38, 38, 0.4), transparent 80%)`}
-                
-                <a href={tech.url} 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   class="group relative h-[130px] overflow-hidden rounded-xl bg-neutral-950"
-                   on:mousemove={(e) => {
-                        const { left, top } = e.currentTarget.getBoundingClientRect();
-                        mouseX.set(e.clientX - left);
-                        mouseY.set(e.clientY - top);
-                   }}>
-                    <div class="absolute right-5 top-0 h-px w-80 bg-gradient-to-l from-transparent via-white/30 via-10% to-transparent" />
-                    <Motion style={{ background }} let:motion>
-                        <div use:motion class="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"></div>
-                    </Motion>
-                    <div class="relative flex h-full flex-col justify-between rounded-xl border border-white/10 px-4 py-4">
-                        <div class="flex items-center gap-3">
-                            <div class="relative w-7 h-7">
-                                <img src={tech.src} alt="" class="absolute -inset-0 blur-md opacity-50" />
-                                <img src={tech.src} alt={tech.name} class="relative w-full h-full z-10" />
-                            </div>
-                            <h3 class="text-lg font-semibold text-neutral-200 line-clamp-1 my-auto">{tech.name}</h3>
-                        </div>
-                        <p class="text-[14px] leading-relaxed text-neutral-400 line-clamp-3">
-                            {$t(`hero.tech.${tech.id}`)}
-                        </p>
-                    </div>
-                </a>
-            {/each}
-        </div>
-    </div>
+		<div
+			class="z-10 px-4 py-1.5 bg-gradient-to-r from-[#4B1F7A] via-[#8724C9] to-[#4B1F7A] rounded-[10px] shadow-lg"
+		>
+			<span class="text-white text-[15px] font-regular tracking-wide">
+				Nic Nevim deník zdarma
+			</span>
+		</div>
+
+		<h1
+			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[36px] md:text-[40px] text-white font-extrabold leading-tight"
+		>
+			Nahlédněte <span class="font-['Playball'] text-[#FFBA00] font-normal italic">do našeho</span>
+			<br />
+			<span class="font-['Playball'] text-[#FFBA00] font-normal italic mr-1.5">portfolia</span> a
+			sledujte, jak
+			<br />
+			aktuálně přemýšlíme
+			<br />
+			nad trhem
+		</h1>
+
+		<p
+			class="z-10 mt-2 max-w-[950px] px-4 text-center text-[20px] md:text-[24px] text-white font-medium leading-[160%]"
+		>
+			Sledujte naše myšlenkové procesy, jaké <br class="hidden md:block" />
+			máme plány a kde právě teď na trzích <br class="hidden md:block" />
+			vidíme
+			<span
+				class="bg-gradient-to-r from-[#C9A44A] via-[#D3C295] to-[#C9A44A] bg-clip-text text-transparent font-semibold"
+				>reálné příležitosti</span
+			>
+			v pravidelných <br class="hidden md:block" />
+			e-mailových lekcích.
+		</p>
+
+		<img
+			src="/assets/addpics/formreview.png"
+			alt="Form Review"
+			class="z-10 w-[260px] md:w-[280px] h-auto mt-4 select-none pointer-events-none"
+			draggable="false"
+			loading="lazy"
+		/>
+
+		<div class="relative z-10 mx-auto mt-5 px-4 w-full md:max-w-[880px]">
+			<div
+				class="relative rounded-[20px] overflow-hidden shadow-2xl aspect-video p-px"
+				style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
+			>
+				<iframe
+					src="https://player.vimeo.com/video/1193758413?h=5e3bc3c930&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+					frameborder="0"
+					allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					class="absolute top-0 left-0 w-full h-full"
+					title="NicNevim deníky VSL video"
+				></iframe>
+			</div>
+		</div>
+
+		<div class="z-10 mt-6 px-4 w-full max-w-[1200px] flex flex-col md:flex-row gap-4">
+			<div
+				class="flex-1 p-6 rounded-[10px] border border-white/10"
+				style="background: linear-gradient(90deg, #4F00A3 0%, #7B00FF 50%, #4F00A3 100%);"
+			>
+				<div class="flex items-center gap-2.5">
+					<img src="/assets/icons/Vector.svg" alt="Icon" class="w-5 h-auto select-none pointer-events-none" draggable="false" loading="lazy" />
+					<h3 class="text-white text-[18px] font-semibold">Stačí 5 minut týdně</h3>
+				</div>
+				<p class="text-white text-[14px] md:text-[16px] font-normal opacity-90">
+					a pochopíte, jak dnes přemýšlíme nad trhy.
+				</p>
+			</div>
+
+			<div
+				class="flex-1 p-6 rounded-[10px] border border-white/10"
+				style="background: linear-gradient(90deg, #4F00A3 0%, #7B00FF 50%, #4F00A3 100%);"
+			>
+				<div class="flex items-center gap-2.5">
+					<img src="/assets/icons/Vector-1.svg" alt="Icon" class="w-6 h-auto select-none pointer-events-none" draggable="false" loading="lazy" />
+					<h3 class="text-white text-[18px] font-semibold">Sdílíme příležitosti</h3>
+				</div>
+				<p class="text-white text-[14px] md:text-[16px] font-normal opacity-90">
+					které máme aktuálně v hledáčku.
+				</p>
+			</div>
+
+			<div
+				class="flex-1 p-6 rounded-[10px] border border-white/10"
+				style="background: linear-gradient(90deg, #4F00A3 0%, #7B00FF 50%, #4F00A3 100%);"
+			>
+				<div class="flex items-center gap-2.5">
+					<img src="/assets/icons/Vector-2.svg" alt="Icon" class="w-4.5 h-auto select-none pointer-events-none" draggable="false" loading="lazy" />
+					<h3 class="text-white text-[18px] font-semibold">450+ investorů</h3>
+				</div>
+				<p class="text-white text-[14px] md:text-[16px] font-normal opacity-90">
+					už sledují naše aktuální myšlenky.
+				</p>
+			</div>
+		</div>
+
+		<div class="flex flex-col items-center">
+			<button
+				onclick={() => {
+					document.getElementById('lead-form')?.scrollIntoView({ behavior: 'smooth' });
+				}}
+				class="group relative px-13 py-3.5 mt-10 bg-[#FFC300] text-[#000000] text-[20px] font-bold rounded-[10px] shadow-[0_0_25px_rgba(254,194,1,0.2)] cursor-pointer transition-all duration-200 hover:scale-105 overflow-hidden"
+			>
+				<span class="relative z-10">Přidat se zdarma</span>
+				<div
+					class="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/50 to-transparent skew-x-[-25deg] transition-all duration-700 ease-in-out group-hover:left-full"
+				></div>
+			</button>
+
+			<p class="mt-5 text-white/40 text-[16px] font-normal text-center leading-tight">
+				Kdykoliv se můžete odhlásit <br />
+				jedním kliknutím
+			</p>
+		</div>
+	</div>
 </section>

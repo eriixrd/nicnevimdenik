@@ -1,44 +1,40 @@
-# 🚀 SvelteStarterKit
+# Premium Svelte Starter — Modern Web Excellence
 
-> A modern and ready-to-use starter template for your next SvelteKit project. Built with TailwindCSS, TypeScript, i18n, SweetAlert2, and more – so you can focus on building, not setting up.
+A state-of-the-art SvelteKit starter kit designed for high-performance, visually stunning web applications. Featuring a clean architecture, premium glassmorphism design, and optimized developer experience.
 
-[Live Demo](https://sveltestarterkit.vercel.app) • [Discussion](https://github.com/eriixrd/SvelteStarterKit/discussions)
+## 🚀 Tech Stack
+- **Framework**: SvelteKit 2
+- **Language**: TypeScript
+- **Styling**: TailwindCSS 4 (Utility-first)
+- **Visuals**: Glassmorphism, Premium Gradients
+- **i18n**: Built-in Internationalization (EN/CS)
+- **Animations**: Svelte Transitions & Motion
 
-![GitHub stars](https://img.shields.io/github/stars/eriixrd/SvelteStarterKit?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/eriixrd/SvelteStarterKit?style=flat-square)
-![GitHub license](https://img.shields.io/github/license/eriixrd/SvelteStarterKit?style=flat-square)
+## ✨ Key Features
+- **Modern Landing Page**: High-conversion hero section with premium animations.
+- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop.
+- **Glassmorphism UI**: Beautiful, translucent components with backdrop-blur.
+- **Optimized Performance**: Fast load times and smooth interactions.
+- **Developer Ready**: Clean structure, pre-configured tools, and easy customization.
+
+## 🛠️ Getting Started
+1. **Installation**:
+   ```bash
+   npm install
+   ```
+2. **Development**:
+   ```bash
+   npm run dev
+   ```
+3. **Build**:
+   ```bash
+   npm run build
+   ```
+
+## 🎨 Design Aesthetic
+- **Minimalist**: Clean, focused layouts.
+- **Premium**: High-end visuals inspired by top-tier SaaS products.
+- **Dynamic**: Subtle micro-animations and interactive elements.
 
 ---
-
-## ✨ Features
-
-- ⚡ **SvelteKit + Vite** — lightning-fast dev environment
-- 🎨 **TailwindCSS** — utility-first styling framework
-- 🧠 **TypeScript** — typed and scalable
-- 🌍 **i18n Support** — multilingual support via `svelte-i18n`
-- 💬 **SweetAlert2** integration for beautiful alerts
-- 🧱 Clean file/folder structure with layouts & routing
-- ✅ Fully extensible and developer-friendly
-
----
-
-## 🖥️ Demo
-
-👉 [Check the live demo](https://sveltestarterkit.vercel.app)
-
----
-
-## 🛠️ Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/eriixrd/SvelteStarterKit.git
-
-# Navigate into the project
-cd SvelteStarterKit
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
+Created with ❤️ by [eriixrd](https://eriixrd.eu)
