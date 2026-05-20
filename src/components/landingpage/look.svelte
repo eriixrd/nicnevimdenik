@@ -65,7 +65,7 @@
 
 		<!-- Tag Badge (Copied styling from Hero) -->
 		<div
-			class="z-10 px-4 py-1.5 bg-gradient-to-r from-[#4B1F7A] via-[#8724C9] to-[#4B1F7A] rounded-[10px] shadow-lg cursor-default transition-transform hover:scale-105 duration-200"
+			class="z-10 px-4 py-1.5 bg-gradient-to-r from-[#4B1F7A] via-[#8724C9] to-[#4B1F7A] rounded-[10px] shadow-lg cursor-default"
 		>
 			<span class="text-white text-[15px] font-regular tracking-wide">
 				Nic Nevim deník zdarma
