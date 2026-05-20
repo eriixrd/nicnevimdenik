@@ -1,40 +1,37 @@
-# Premium Svelte Starter — Modern Web Excellence
+# 📈 Nic Nevím Deník
 
-A state-of-the-art SvelteKit starter kit designed for high-performance, visually stunning web applications. Featuring a clean architecture, premium glassmorphism design, and optimized developer experience.
+Prémiová investiční a tradingová landing page s komunitním deníkem postavená na moderním stacku **SvelteKit**, **TailwindCSS 4** a **TypeScript**.
 
-## 🚀 Tech Stack
-- **Framework**: SvelteKit 2
-- **Language**: TypeScript
-- **Styling**: TailwindCSS 4 (Utility-first)
-- **Visuals**: Glassmorphism, Premium Gradients
-- **i18n**: Built-in Internationalization (EN/CS)
-- **Animations**: Svelte Transitions & Motion
+Projekt slouží jako vstupní brána do VIP komunity, kde profesionální obchodníci transparentně sdílejí své reálné obchody, dlouhodobou strategii (s cílem 20-30% p.a.) a komplexní myšlenkové pochody přímo z praxe.
 
-## ✨ Key Features
-- **Modern Landing Page**: High-conversion hero section with premium animations.
-- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop.
-- **Glassmorphism UI**: Beautiful, translucent components with backdrop-blur.
-- **Optimized Performance**: Fast load times and smooth interactions.
-- **Developer Ready**: Clean structure, pre-configured tools, and easy customization.
+## 🚀 Použité technologie (Tech Stack)
+- **Framework**: [SvelteKit 2](https://kit.svelte.dev/) (Svelte 5 Runes)
+- **Styling**: [TailwindCSS 4](https://tailwindcss.com/) (prémiový glassmorphismus, tmavé motivy a plynulé přechody)
+- **Jazyk**: [TypeScript](https://www.typescriptlang.org/)
+- **Lokalizace**: [Sveltekit-i18n](https://github.com/ivanhofer/sveltekit-i18n) (připraveno na multijazyčnost EN/CS)
+- **Komponenty**: Plynulé animace a responzivní design optimalizovaný pro všechna mobilní zařízení i desktop.
 
-## 🛠️ Getting Started
-1. **Installation**:
+## ✨ Klíčové sekce landing page
+- **Hero sekce**: Poutavé video s přímým call-to-action na registraci.
+- **Strategie a výsledky (Look)**: Reálné grafy vývoje a ukázky úspěšných investičních nákupů.
+- **Klíčové výhody (Keys)**: Tři pilíře (aktuální reakce na trhy, myšlenkový proces, reálné obchody).
+- **Strategická sekce (Help)**: Dlouhodobé zhodnocení kapitálu a napojení na placenou Discord komunitu (přes 450 investorů).
+- **Know-how**: Analýzy makroekonomie, tržní lekce a reálné ukázky tradingových deníků zdarma.
+- **Interaktivní FAQ**: Nejčastější otázky a odpovědi s plynulým otevíráním.
+
+## 🛠️ Jak spustit lokálně
+1. **Nainstalujte závislosti**:
    ```bash
    npm install
    ```
-2. **Development**:
+2. **Spusťte vývojový server**:
    ```bash
    npm run dev
    ```
-3. **Build**:
+3. **Sestavení produkčního buildu**:
    ```bash
    npm run build
    ```
 
-## 🎨 Design Aesthetic
-- **Minimalist**: Clean, focused layouts.
-- **Premium**: High-end visuals inspired by top-tier SaaS products.
-- **Dynamic**: Subtle micro-animations and interactive elements.
-
 ---
-Created with ❤️ by [eriixrd](https://eriixrd.eu)
+Vytvořeno s ❤️ pro [nicnevimdenik](https://github.com/eriixrd/nicnevimdenik)
