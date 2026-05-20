@@ -173,7 +173,7 @@
 				<!-- Tag Badge -->
 				<div class="flex justify-center mt-6">
 					<div
-						class="px-5 py-1.5 bg-gradient-to-r from-[#4B1F7A] via-[#8A35C3] to-[#4B1F7A] rounded-[10px] shadow-md border border-white/10 backdrop-blur-md cursor-default transition-transform hover:scale-105 duration-200"
+						class="px-5 py-1.5 bg-gradient-to-r from-[#4B1F7A] via-[#8A35C3] to-[#4B1F7A] rounded-[10px] shadow-md border border-white/10 backdrop-blur-md cursor-default"
 					>
 						<span class="text-white text-[15px] font-bold tracking-wide">
 							Zbývá poslední krok
