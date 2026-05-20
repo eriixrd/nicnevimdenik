@@ -222,9 +222,12 @@
 					<button
 						type="submit"
 						disabled={isSubmitting}
-						class="w-full py-3.5 mt-3 bg-[#FFC300] text-[#000000] text-[20px] font-extrabold rounded-[10px] shadow-[0_0_20px_rgba(254,194,1,0.2)] cursor-pointer transition-all duration-200 hover:scale-[102%] text-center focus:outline-none disabled:opacity-80 disabled:cursor-not-allowed"
+						class="group relative w-full py-3.5 mt-3 bg-[#FFC300] text-[#000000] text-[20px] font-extrabold rounded-[10px] shadow-[0_0_20px_rgba(254,194,1,0.2)] cursor-pointer transition-all duration-200 hover:scale-[102%] text-center focus:outline-none disabled:opacity-80 disabled:cursor-not-allowed overflow-hidden"
 					>
-						{isSubmitting ? 'Odesílám...' : 'Přidat se zdarma'}
+						<span class="relative z-10">{isSubmitting ? 'Odesílám...' : 'Přidat se zdarma'}</span>
+						<div
+							class="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/50 to-transparent skew-x-[-25deg] transition-all duration-700 ease-in-out group-hover:left-full"
+						></div>
 					</button>
 
 					<!-- Footer text -->
