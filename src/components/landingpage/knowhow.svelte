@@ -81,10 +81,12 @@
 			schránce za 5 minut týdně.
 		</p>
 
-		<!-- Email Sketches Container (Desktop & Mobile: stacked, max-width: 330px) -->
-		<div class="flex flex-col gap-4 mt-6 px-4 w-full max-w-[345px] z-10">
-			<!-- Sketch 1 -->
-			<div class="relative overflow-hidden p-px">
+		<!-- Email Sketches Container (Desktop: side-by-side, Moody's left, Reddit right, larger) -->
+		<div
+			class="flex flex-col md:flex-row gap-4 md:gap-6 mt-5 px-4 w-full max-w-[345px] md:max-w-[840px] md:justify-center z-10"
+		>
+			<!-- Sketch 1 (Reddit) - Top on mobile, Right on desktop -->
+			<div class="relative overflow-hidden p-px w-full md:max-w-[400px] order-1 md:order-2">
 				<img
 					src="/assets/addpics/Email for fast sketching (1) 3.png"
 					alt="Email Sketch 1"
@@ -94,8 +96,8 @@
 				/>
 			</div>
 
-			<!-- Sketch 2 -->
-			<div class="relative overflow-hidden p-px">
+			<!-- Sketch 2 (Moody's) - Bottom on mobile, Left on desktop -->
+			<div class="relative overflow-hidden p-px w-full md:max-w-[400px] order-2 md:order-1">
 				<img
 					src="/assets/addpics/Email for fast sketching (2) 3.png"
 					alt="Email Sketch 2"
@@ -109,7 +111,7 @@
 			onclick={() => {
 				document.getElementById('lead-form')?.scrollIntoView({ behavior: 'smooth' });
 			}}
-			class="group relative px-13 py-3.5 mt-4 bg-[#FFC300] text-[#000000] text-[20px] font-bold rounded-[10px] shadow-[0_0_25px_rgba(254,194,1,0.2)] cursor-pointer transition-all duration-200 hover:scale-105 overflow-hidden"
+			class="group relative px-13 py-3.5 mt-25 bg-[#FFC300] text-[#000000] text-[20px] font-bold rounded-[10px] shadow-[0_0_25px_rgba(254,194,1,0.2)] cursor-pointer transition-all duration-200 hover:scale-105 overflow-hidden"
 		>
 			<span class="relative z-10">Přidat se zdarma</span>
 			<div

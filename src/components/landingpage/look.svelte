@@ -18,14 +18,17 @@
 			formData.append('surname', surname);
 			formData.append('email', email);
 
-			await fetch('https://nanoczm.ecomailapp.cz/public/subscribe/5/ed07fd6b07ff0199fabc8509f995f058', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded'
-				},
-				mode: 'no-cors',
-				body: formData.toString()
-			});
+			await fetch(
+				'https://nanoczm.ecomailapp.cz/public/subscribe/5/ed07fd6b07ff0199fabc8509f995f058',
+				{
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded'
+					},
+					mode: 'no-cors',
+					body: formData.toString()
+				}
+			);
 
 			// Direct redirect to registration success page
 			goto('/registrace-uspesna');
@@ -68,10 +71,10 @@
 		<h1
 			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[36px] md:text-[40px] text-white text-nowrap font-extrabold leading-tight"
 		>
-			Nahlédněte <span class="font-['Playball'] text-[#FFBA00] font-normal italic">do našeho</span>
+			Nahlédněte <span class="font-['Playball'] text-[#FFBA00] font-normal">do našeho</span>
 			<br />
-			<span class="font-['Playball'] text-[#FFBA00] font-normal italic mr-1.5">portfolia</span> a
-			sledujte, jak
+			<span class="font-['Playball'] text-[#FFBA00] font-normal mr-1.5">portfolia</span> a sledujte,
+			jak
 			<br />
 			aktuálně přemýšlíme
 			<br />
@@ -90,7 +93,7 @@
 		</div>
 
 		<!-- "Co vše dostanete" Lavender Card -->
-		<div class="z-10 -mt-14 w-full max-w-[480px] px-2 md:px-0">
+		<div class="z-10 -mt-14 w-full max-w-[650px] px-2 md:px-0">
 			<div class="w-full bg-[#E7E1FB] rounded-[20px] p-6 md:p-8 flex flex-col text-[#000000] gap-1">
 				<h3
 					class="text-[22px] md:text-[24px] mt-6 text-[#000000] font-bold text-left tracking-tight"
@@ -100,52 +103,83 @@
 
 				<div class="flex flex-col gap-3">
 					<!-- Item 1 -->
-					<div class="flex items-start gap-2">
-						<img src="/assets/icons/Checkmark.png" alt="Check" class="w-4 h-4 shrink-0 mt-1 select-none pointer-events-none" draggable="false" loading="lazy" />
-						<p class="text-[15px] md:text-[16px] font-normal text-left leading-relaxed">
+					<div class="flex items-start gap-2 md:gap-3">
+						<img
+							src="/assets/icons/Checkmark.png"
+							alt="Check"
+							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
+							draggable="false"
+							loading="lazy"
+						/>
+						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Deníky Nic Nevim</strong> - Jak
-							přemýšlíme<br />
-							nad našimi obchody za 5 minut týdně
+							přemýšlíme<br class="block md:hidden" /> nad našimi obchody za 5 minut týdně
 						</p>
 					</div>
 
 					<!-- Item 2 -->
-					<div class="flex items-start gap-2">
-						<img src="/assets/icons/Checkmark.png" alt="Check" class="w-4 h-4 shrink-0 mt-1 select-none pointer-events-none" draggable="false" loading="lazy" />
-						<p class="text-[15px] md:text-[16px] font-normal text-left leading-relaxed">
+					<div class="flex items-start gap-2 md:gap-3">
+						<img
+							src="/assets/icons/Checkmark.png"
+							alt="Check"
+							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
+							draggable="false"
+							loading="lazy"
+						/>
+						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Aktuální příležitosti</strong>, které
-							máme<br />
-							v hledáčku
+							máme<br class="block md:hidden" /> v hledáčku
 						</p>
 					</div>
 
 					<!-- Item 3 -->
-					<div class="flex items-start gap-2">
-						<img src="/assets/icons/Checkmark.png" alt="Check" class="w-4 h-4 shrink-0 mt-1 select-none pointer-events-none" draggable="false" loading="lazy" />
-						<p class="text-[15px] md:text-[16px] font-normal text-left leading-relaxed">
-							<strong class="font-extrabold text-[#000000]">Jednorázový snímek našeho</strong><br />
+					<div class="flex items-start gap-2 md:gap-3">
+						<img
+							src="/assets/icons/Checkmark.png"
+							alt="Check"
+							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
+							draggable="false"
+							loading="lazy"
+						/>
+						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
+							<strong class="font-extrabold text-[#000000]">Jednorázový snímek našeho</strong><br
+								class="block md:hidden"
+							/>
 							<strong class="font-extrabold text-[#000000]">portfolia</strong> pro inspiraci a učení
 						</p>
 					</div>
 
 					<!-- Item 4 -->
-					<div class="flex items-start gap-2">
-						<img src="/assets/icons/Checkmark.png" alt="Check" class="w-4 h-4 shrink-0 mt-1 select-none pointer-events-none" draggable="false" loading="lazy" />
-						<p class="text-[15px] md:text-[16px] font-normal text-left leading-relaxed">
+					<div class="flex items-start gap-2 md:gap-3">
+						<img
+							src="/assets/icons/Checkmark.png"
+							alt="Check"
+							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
+							draggable="false"
+							loading="lazy"
+						/>
+						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Rozbor našich reálných obchodů</strong
-							>,<br />
-							uvidíte, jak principy používáme v<br />
-							praxi
+							>,<br class="block md:hidden" />
+							uvidíte, jak principy používáme v<br class="block md:hidden" /> praxi
 						</p>
 					</div>
 
 					<!-- Item 5 -->
-					<div class="flex items-start gap-2">
-						<img src="/assets/icons/Checkmark.png" alt="Check" class="w-4 h-4 shrink-0 mt-1 select-none pointer-events-none" draggable="false" loading="lazy" />
-						<p class="text-[15px] md:text-[16px] font-normal text-left leading-relaxed">
-							Koukáte přes rameno člověku, který<br />
-							se podílí na investicích v
-							<strong class="font-extrabold text-[#000000]">řádu stovek</strong><br />
+					<div class="flex items-start gap-2 md:gap-3">
+						<img
+							src="/assets/icons/Checkmark.png"
+							alt="Check"
+							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
+							draggable="false"
+							loading="lazy"
+						/>
+						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
+							Koukáte přes rameno člověku, který<br class="block md:hidden" /> se podílí na
+							investicích v
+							<strong class="font-extrabold text-[#000000]">řádu stovek</strong><br
+								class="block md:hidden"
+							/>
 							<strong class="font-extrabold text-[#000000]">milionů korun</strong>
 						</p>
 					</div>
@@ -189,7 +223,10 @@
 				</p>
 
 				<!-- Sign up Form Container -->
-				<form on:submit={handleSubmit} class="mt-8 flex flex-col gap-3.5 w-full max-w-[440px] mx-auto">
+				<form
+					on:submit={handleSubmit}
+					class="mt-8 flex flex-col gap-3.5 w-full max-w-[480px] mx-auto"
+				>
 					<input
 						type="text"
 						name="firstname"

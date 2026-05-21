@@ -119,7 +119,13 @@
 					class="p-4 md:p-8 rounded-[14px] md:rounded-[20px] flex flex-col justify-between gap-3 md:gap-4"
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
-					<img src="/assets/icons/Kolac.svg" alt="Portfolio Icon" class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none" draggable="false" loading="lazy" />
+					<img
+						src="/assets/icons/Kolac.svg"
+						alt="Portfolio Icon"
+						class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none"
+						draggable="false"
+						loading="lazy"
+					/>
 					<h3
 						class="text-white text-[16px] md:text-[24px] font-bold leading-[1.4] md:leading-tight"
 					>
@@ -132,7 +138,13 @@
 					class="p-4 md:p-8 rounded-[14px] md:rounded-[20px] flex flex-col justify-between gap-3 md:gap-4"
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
-					<img src="/assets/icons/globe.svg" alt="Globe Icon" class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none" draggable="false" loading="lazy" />
+					<img
+						src="/assets/icons/globe.svg"
+						alt="Globe Icon"
+						class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none"
+						draggable="false"
+						loading="lazy"
+					/>
 					<h3
 						class="text-white text-[16px] md:text-[24px] font-bold leading-[1.4] md:leading-tight"
 					>
@@ -169,7 +181,7 @@
 			></div>
 
 			<p
-				class="relative z-10 text-white text-[20px] md:text-[36px] font-bold mb-4 mt-15 text-center"
+				class="relative z-10 text-white text-[18px] md:text-[26px] font-bold mb-4 mt-15 text-center"
 			>
 				Zde jsou výsledky <br />naší strategie:
 			</p>
@@ -192,8 +204,6 @@
 					/>
 				</div>
 			</div>
-
-
 
 			<!-- Mobile Navigation Buttons (Mobile only) -->
 			<div class="md:hidden flex justify-center gap-3 mt-4 mb-4">
@@ -246,7 +256,7 @@
 						Cílem naší strategie je<br />dlouhodobé zhodnocení v<br />řádu
 						<span class="text-[#D3C295]">20-30% p.a.</span>
 					</h3>
-					<p class="text-white text-[14px] md:text-[15px] font-medium leading-[1.6]">
+					<p class="text-white text-[15px] font-medium leading-[1.6]">
 						Výsledky z minulých let ukazují, že<br />tato strategie funguje, nicméně i přes<br />to
 						dosažení našeho cíle nelze<br />garantovat. V denících vám ukážeme<br />konkrétní
 						obchody a celý myšlenkový<br />proces, abyste se mohli inspirovat a<br />dělat
@@ -270,7 +280,7 @@
 						Naše obchody sleduje<br />živě <span class="text-[#D3C295]">přes 450 investorů</span><br
 						/>v placené komunitě
 					</h3>
-					<p class="text-white text-[14px] md:text-[15px] font-medium leading-[1.6]">
+					<p class="text-white text-[15px] font-medium leading-[1.6]">
 						Uvnitř naší Discord komunity sdílím<br />každý nový obchod –
 						<span class="text-[#D3C295]">co nakupujeme,<br />proč a kdy prodáváme</span>. Naše
 						výsledky<br />si tam může kdokoliv zpětně dohledat.<br />V tomto deníku můžete
@@ -295,7 +305,7 @@
 						Podílíme se na investicích<br />v řádech
 						<span class="text-[#D3C295]">stovek milionů<br />korun</span>
 					</h3>
-					<p class="text-white text-[14px] md:text-[15px] font-medium leading-[1.6]">
+					<p class="text-white text-[15px] font-medium leading-[1.6]">
 						Nejsme žádní teoretici - spravujeme<br />kapitál pro kvalifikované investory a<br
 						/><span class="text-[#D3C295]">uzavíráme stovky obchodů ročně</span>. To,<br />co vás
 						učíme, sami aplikujeme každý<br />den s reálnými penězi na akciových<br />trzích.
