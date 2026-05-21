@@ -2,13 +2,16 @@
 </script>
 
 <footer class="bg-[#000000] text-slate-400 border-t border-white/5 py-16">
-	<div class="max-w-[1200px] mx-auto pl-12 pr-6 md:px-6 flex flex-col md:flex-row justify-center items-start md:items-center gap-10 md:gap-40">
+	<div
+		class="max-w-[1200px] mx-auto pl-12 pr-6 md:px-6 flex flex-col md:flex-row justify-center items-start md:items-center gap-10 md:gap-40"
+	>
 		<!-- Left Column: Logo & Contact -->
 		<div class="flex flex-col items-start gap-5">
 			<!-- Brand Logo -->
 			<div class="-ml-2">
-				<img decoding="async"
-					src="/assets/addpics/NN logooo 3.png"
+				<img
+					decoding="async"
+					src="/assets/addpics/NN logooo 3.webp"
 					alt="Nic Nevim Logo"
 					class="h-[80px] w-auto select-none pointer-events-none"
 					draggable="false"
@@ -33,8 +36,9 @@
 		<div class="flex flex-col items-start gap-4">
 			<!-- Payment Icons -->
 			<div>
-				<img decoding="async"
-					src="/assets/addpics/Group 75.png"
+				<img
+					decoding="async"
+					src="/assets/addpics/Group 75.webp"
 					alt="Platební metody"
 					class="h-[32px] md:h-[25px] w-auto select-none pointer-events-none"
 					draggable="false"
