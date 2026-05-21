@@ -50,7 +50,7 @@
 	>
 		<!-- Logo (Copied styling from Hero) -->
 		<img decoding="async"
-			src="/assets/addpics/logo.png"
+			src="/assets/addpics/logo.webp"
 			alt="Logo"
 			class="z-10 h-[80px] w-auto select-none pointer-events-none"
 			draggable="false"
@@ -84,7 +84,7 @@
 		<!-- Image under heading -->
 		<div class="z-10 mt-8 w-full max-w-[600px] md:px-0">
 			<img decoding="async"
-				src="/assets/addpics/majk.png"
+				src="/assets/addpics/majk.webp"
 				alt="Majk"
 				class="w-full h-auto rounded-[20px] shadow-lg object-cover select-none pointer-events-none"
 				draggable="false"
@@ -105,7 +105,7 @@
 					<!-- Item 1 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img decoding="async"
-							src="/assets/icons/Checkmark.png"
+							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
@@ -120,7 +120,7 @@
 					<!-- Item 2 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img decoding="async"
-							src="/assets/icons/Checkmark.png"
+							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
@@ -135,7 +135,7 @@
 					<!-- Item 3 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img decoding="async"
-							src="/assets/icons/Checkmark.png"
+							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
@@ -152,7 +152,7 @@
 					<!-- Item 4 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img decoding="async"
-							src="/assets/icons/Checkmark.png"
+							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
@@ -168,7 +168,7 @@
 					<!-- Item 5 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img decoding="async"
-							src="/assets/icons/Checkmark.png"
+							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
@@ -278,7 +278,7 @@
 					<!-- Overlapping Reviews/Avatars & Rating -->
 					<div class="mt-2 flex justify-center w-full">
 						<img decoding="async"
-							src="/assets/addpics/formreview.png"
+							src="/assets/addpics/formreview.webp"
 							alt="Hodnocení"
 							class="w-[260px] md:w-[280px] h-auto select-none pointer-events-none"
 							draggable="false"

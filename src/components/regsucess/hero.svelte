@@ -28,7 +28,7 @@
 		<div class="relative w-full flex flex-col items-center mt-6">
 			<!-- Hoodie Speaker Image -->
 			<img decoding="async"
-				src="/assets/addpics/knowhow.png"
+				src="/assets/addpics/knowhow.webp"
 				alt="Deník Nic Nevím"
 				class="z-10 w-[88%] h-auto rounded-[15px] shadow-2xl object-cover aspect-[1.58/1] select-none pointer-events-none"
 				draggable="false"

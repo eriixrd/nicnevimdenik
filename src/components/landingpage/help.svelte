@@ -105,7 +105,7 @@
 				style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
 			>
 				<img decoding="async"
-					src="/assets/addpics/Group_64.png"
+					src="/assets/addpics/Group_64.webp"
 					alt="Trading Platform Preview"
 					class="w-full h-auto rounded-[20px] select-none pointer-events-none"
 					draggable="false"
@@ -195,7 +195,7 @@
 					class="flex justify-start md:justify-center w-max md:w-full mx-auto px-4 md:max-w-[880px]"
 				>
 					<img decoding="async"
-						src="/assets/addpics/graf.png"
+						src="/assets/addpics/graf.webp"
 						alt="Strategy Growth Graph"
 						class="w-[610px] h-auto md:w-full rounded-[20px] shadow-2xl object-cover select-none pointer-events-none"
 						style="image-rendering: -webkit-optimize-contrast;"

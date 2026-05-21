@@ -11,7 +11,7 @@
 <section class="bg-[#0C0914] pt-6 pb-15">
 	<div class="relative flex flex-col items-center justify-center w-full max-w-full">
 		<img decoding="async"
-			src="/assets/addpics/logo.png"
+			src="/assets/addpics/logo.webp"
 			alt="Logo"
 			class="z-10 h-[80px] w-auto select-none pointer-events-none"
 			draggable="false"
@@ -55,7 +55,7 @@
 		</p>
 
 		<img decoding="async"
-			src="/assets/addpics/formreview.png"
+			src="/assets/addpics/formreview.webp"
 			alt="Form Review"
 			class="z-10 w-[260px] md:w-[280px] h-auto mt-4 select-none pointer-events-none"
 			draggable="false"
