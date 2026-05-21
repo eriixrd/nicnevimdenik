@@ -46,7 +46,7 @@
 					<div
 						class="relative w-full rounded-[15px] overflow-hidden bg-yellow-500/10 aspect-[1.44/1]"
 					>
-						<img
+						<img decoding="async"
 							src="/assets/addpics/magnific_a-premium-cinematic-ultra_2967811125 1.png"
 							alt="Klíčový bod 1"
 							class="w-full h-full object-cover select-none pointer-events-none"
@@ -96,7 +96,7 @@
 					<div
 						class="relative w-full rounded-[15px] overflow-hidden bg-yellow-500/10 aspect-[1.44/1]"
 					>
-						<img
+						<img decoding="async"
 							src="/assets/addpics/magnific_a-premium-cinematic-ultra_2968039492 1.png"
 							alt="Klíčový bod 2"
 							class="w-full h-full object-cover select-none pointer-events-none"
@@ -146,7 +146,7 @@
 					<div
 						class="relative w-full rounded-[15px] overflow-hidden bg-yellow-500/10 aspect-[1.44/1]"
 					>
-						<img
+						<img decoding="async"
 							src="/assets/addpics/mike obchody 3.png"
 							alt="Klíčový bod 3"
 							class="w-full h-full object-cover select-none pointer-events-none"

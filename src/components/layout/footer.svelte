@@ -7,7 +7,7 @@
 		<div class="flex flex-col items-start gap-5">
 			<!-- Brand Logo -->
 			<div class="-ml-2">
-				<img
+				<img decoding="async"
 					src="/assets/addpics/NN logooo 3.png"
 					alt="Nic Nevim Logo"
 					class="h-[80px] w-auto select-none pointer-events-none"
@@ -33,7 +33,7 @@
 		<div class="flex flex-col items-start gap-4">
 			<!-- Payment Icons -->
 			<div>
-				<img
+				<img decoding="async"
 					src="/assets/addpics/Group 75.png"
 					alt="Platební metody"
 					class="h-[32px] md:h-[25px] w-auto select-none pointer-events-none"
@@ -46,9 +46,7 @@
 			<!-- Legal Links -->
 			<div class="flex flex-col items-start gap-2">
 				<a
-					href="https://nicnevim.com/zasady-ochrany-osobnich-udaju"
-					target="_blank"
-					rel="noopener noreferrer"
+					href="/Zásady-ochrany-osobních-údajů"
 					class="text-[13px] md:text-[12px] text-white/90 hover:text-[#FFC300] transition-colors duration-200 underline decoration-white/30 underline-offset-4"
 				>
 					Zásady ochrany osobních údajů

@@ -2,18 +2,19 @@
 </script>
 
 <svelte:head>
+	<link rel="preconnect" href="https://player.vimeo.com">
 	<script src="https://player.vimeo.com/api/player.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <section class="bg-[#0C0914] pt-6 pb-15">
 	<div class="relative flex flex-col items-center justify-center w-full max-w-full">
-		<img
+		<img decoding="async"
 			src="/assets/addpics/logo.png"
 			alt="Logo"
 			class="z-10 h-[80px] w-auto select-none pointer-events-none"
 			draggable="false"
-			loading="lazy"
+			fetchpriority="high"
 			style="max-width:160px; image-rendering: -webkit-optimize-contrast;"
 		/>
 
@@ -52,7 +53,7 @@
 			e-mailových lekcích.
 		</p>
 
-		<img
+		<img decoding="async"
 			src="/assets/addpics/formreview.png"
 			alt="Form Review"
 			class="z-10 w-[260px] md:w-[280px] h-auto mt-4 select-none pointer-events-none"
@@ -82,7 +83,7 @@
 				style="background: linear-gradient(90deg, #4F00A3 0%, #7B00FF 50%, #4F00A3 100%);"
 			>
 				<div class="flex items-center gap-2.5">
-					<img
+					<img decoding="async"
 						src="/assets/icons/Vector.svg"
 						alt="Icon"
 						class="w-5 h-auto select-none pointer-events-none"
@@ -101,7 +102,7 @@
 				style="background: linear-gradient(90deg, #4F00A3 0%, #7B00FF 50%, #4F00A3 100%);"
 			>
 				<div class="flex items-center gap-2.5">
-					<img
+					<img decoding="async"
 						src="/assets/icons/Vector-1.svg"
 						alt="Icon"
 						class="w-6 h-auto select-none pointer-events-none"
@@ -120,7 +121,7 @@
 				style="background: linear-gradient(90deg, #4F00A3 0%, #7B00FF 50%, #4F00A3 100%);"
 			>
 				<div class="flex items-center gap-2.5">
-					<img
+					<img decoding="async"
 						src="/assets/icons/Vector-2.svg"
 						alt="Icon"
 						class="w-4.5 h-auto select-none pointer-events-none"

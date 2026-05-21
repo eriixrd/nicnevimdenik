@@ -104,7 +104,7 @@
 				class="relative rounded-[20px] overflow-hidden shadow-2xl p-px"
 				style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
 			>
-				<img
+				<img decoding="async"
 					src="/assets/addpics/Group_64.png"
 					alt="Trading Platform Preview"
 					class="w-full h-auto rounded-[20px] select-none pointer-events-none"
@@ -119,7 +119,7 @@
 					class="p-4 md:p-8 rounded-[14px] md:rounded-[20px] flex flex-col justify-between gap-3 md:gap-4"
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/icons/Kolac.svg"
 						alt="Portfolio Icon"
 						class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none"
@@ -138,7 +138,7 @@
 					class="p-4 md:p-8 rounded-[14px] md:rounded-[20px] flex flex-col justify-between gap-3 md:gap-4"
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/icons/globe.svg"
 						alt="Globe Icon"
 						class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none"
@@ -157,7 +157,7 @@
 					class="col-span-2 md:col-span-1 p-4 md:p-8 rounded-[14px] md:rounded-[20px] flex items-center md:flex-col md:justify-between md:items-start gap-4"
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/icons/graphlines.svg"
 						alt="Trades Icon"
 						class="w-8 h-8 md:w-10 md:h-10 shrink-0 select-none pointer-events-none"
@@ -194,7 +194,7 @@
 				<div
 					class="flex justify-start md:justify-center w-max md:w-full mx-auto px-4 md:max-w-[880px]"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/addpics/graf.png"
 						alt="Strategy Growth Graph"
 						class="w-[610px] h-auto md:w-full rounded-[20px] shadow-2xl object-cover select-none pointer-events-none"
@@ -213,7 +213,7 @@
 					class="w-11 h-auto active:scale-95 flex items-center justify-center transition-all"
 					aria-label="Scroll left"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/addpics/arrow_11848700 6.png"
 						alt="Scroll Left"
 						class="w-11 h-auto object-contain select-none pointer-events-none"
@@ -228,7 +228,7 @@
 					class="w-11 h-auto active:scale-95 flex items-center justify-center transition-all"
 					aria-label="Scroll right"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/addpics/arrow_11848700 6.png"
 						alt="Scroll Right"
 						class="w-11 h-auto object-contain rotate-180 select-none pointer-events-none"
@@ -245,7 +245,7 @@
 					class="p-6 rounded-[20px] flex flex-col gap-4 border border-white/5 transition-all duration-300 hover:border-white/10"
 					style="background: linear-gradient(135deg, rgba(17, 17, 22, 0.7) 0%, rgba(28, 35, 48, 0.7) 50%, rgba(17, 17, 22, 0.7) 100%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/Vector.svg"
 						alt="Diamond Icon"
 						class="w-[27px] h-[21px] object-contain select-none pointer-events-none"
@@ -269,7 +269,7 @@
 					class="p-6 rounded-[20px] flex flex-col gap-4 border border-white/5 transition-all duration-300 hover:border-white/10"
 					style="background: linear-gradient(135deg, rgba(17, 17, 22, 0.7) 0%, rgba(28, 35, 48, 0.7) 50%, rgba(17, 17, 22, 0.7) 100%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/Vector-1.svg"
 						alt="Bell Icon"
 						class="w-[20px] h-[21px] object-contain select-none pointer-events-none"
@@ -294,7 +294,7 @@
 					class="p-6 rounded-[20px] flex flex-col gap-4 border border-white/5 transition-all duration-300 hover:border-white/10"
 					style="background: linear-gradient(135deg, rgba(17, 17, 22, 0.7) 0%, rgba(28, 35, 48, 0.7) 50%, rgba(17, 17, 22, 0.7) 100%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/Vector-2.svg"
 						alt="Shield Icon"
 						class="w-[21px] h-[24px] object-contain select-none pointer-events-none"
@@ -334,7 +334,7 @@
 					class="relative rounded-[20px] overflow-hidden shadow-2xl p-px"
 					style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
 				>
-					<img
+					<img decoding="async"
 						src="/assets/addpics/MMMM1 1.png"
 						alt="Portfolio Review Chart"
 						class="w-full h-auto rounded-[20px] select-none pointer-events-none"

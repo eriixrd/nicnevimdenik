@@ -49,7 +49,7 @@
 		class="relative flex flex-col items-center justify-center w-full max-w-[1200px] mx-auto text-center px-4"
 	>
 		<!-- Logo (Copied styling from Hero) -->
-		<img
+		<img decoding="async"
 			src="/assets/addpics/logo.png"
 			alt="Logo"
 			class="z-10 h-[80px] w-auto select-none pointer-events-none"
@@ -83,7 +83,7 @@
 
 		<!-- Image under heading -->
 		<div class="z-10 mt-8 w-full max-w-[600px] md:px-0">
-			<img
+			<img decoding="async"
 				src="/assets/addpics/majk.png"
 				alt="Majk"
 				class="w-full h-auto rounded-[20px] shadow-lg object-cover select-none pointer-events-none"
@@ -104,7 +104,7 @@
 				<div class="flex flex-col gap-3">
 					<!-- Item 1 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img
+						<img decoding="async"
 							src="/assets/icons/Checkmark.png"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -119,7 +119,7 @@
 
 					<!-- Item 2 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img
+						<img decoding="async"
 							src="/assets/icons/Checkmark.png"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -134,7 +134,7 @@
 
 					<!-- Item 3 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img
+						<img decoding="async"
 							src="/assets/icons/Checkmark.png"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -151,7 +151,7 @@
 
 					<!-- Item 4 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img
+						<img decoding="async"
 							src="/assets/icons/Checkmark.png"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -167,7 +167,7 @@
 
 					<!-- Item 5 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img
+						<img decoding="async"
 							src="/assets/icons/Checkmark.png"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -187,7 +187,7 @@
 
 				<!-- Arrow pointing down -->
 				<div class="flex justify-center mt-10">
-					<img
+					<img decoding="async"
 						src="/assets/addpics/šipkaaaaaaaaaaaa.svg"
 						alt="Šipka"
 						class="w-10 h-auto opacity-95 select-none pointer-events-none"
@@ -277,7 +277,7 @@
 
 					<!-- Overlapping Reviews/Avatars & Rating -->
 					<div class="mt-2 flex justify-center w-full">
-						<img
+						<img decoding="async"
 							src="/assets/addpics/formreview.png"
 							alt="Hodnocení"
 							class="w-[260px] md:w-[280px] h-auto select-none pointer-events-none"

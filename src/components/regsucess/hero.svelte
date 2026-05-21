@@ -27,7 +27,7 @@
 		<!-- Main Image & Overlapping Card Container -->
 		<div class="relative w-full flex flex-col items-center mt-6">
 			<!-- Hoodie Speaker Image -->
-			<img
+			<img decoding="async"
 				src="/assets/addpics/knowhow.png"
 				alt="Deník Nic Nevím"
 				class="z-10 w-[88%] h-auto rounded-[15px] shadow-2xl object-cover aspect-[1.58/1] select-none pointer-events-none"
@@ -41,7 +41,7 @@
 				class="flex items-center justify-center w-full -mt-7 z-20 rounded-[20px] py-8 px-6 shadow-lg text-black animate-fade-in"
 				style="background: linear-gradient(to bottom right, #C9A44A 0%, #D3C295 50%, #C9A44A 100%);"
 			>
-				<p class="text-[#000000] text-[18px] md:text-[20px] font-bold leading-[1.3] text-center">
+				<p class="text-[#000000] text-[18px] md:text-[24px] font-bold leading-[1.3] text-center">
 					Už teď tam naleznete<br />
 					první lekci a náhled do<br />
 					našeho portfolia.
@@ -54,7 +54,7 @@
 			class="z-10 mt-6 w-full border border-white/10 rounded-[15px] p-6 flex flex-col items-center gap-3 shadow-xl"
 		>
 			<!-- Gold Info SVG Icon -->
-			<img
+			<img decoding="async"
 				src="/assets/icons/info.svg"
 				alt="Info"
 				class="w-6 h-6 select-none pointer-events-none"
