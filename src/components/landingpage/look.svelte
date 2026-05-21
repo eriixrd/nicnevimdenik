@@ -9,32 +9,53 @@
 
 	async function handleSubmit(event: SubmitEvent) {
 		event.preventDefault();
+
 		if (isSubmitting) return;
+
+		// Basic validation
+		if (!name.trim() || !surname.trim() || !email.trim()) {
+			toast.error('Vyplňte prosím všechna pole.');
+			return;
+		}
+
 		isSubmitting = true;
 
 		try {
-			const formData = new URLSearchParams();
+			const formData = new FormData();
+
+			// Ecomail field names
 			formData.append('name', name);
 			formData.append('surname', surname);
 			formData.append('email', email);
 
-			await fetch(
+			const response = await fetch(
 				'https://nanoczm.ecomailapp.cz/public/subscribe/5/ed07fd6b07ff0199fabc8509f995f058',
 				{
 					method: 'POST',
-					headers: {
-						'Content-Type': 'application/x-www-form-urlencoded'
-					},
-					mode: 'no-cors',
-					body: formData.toString()
+					body: formData
 				}
 			);
 
-			// Direct redirect to registration success page
-			goto('/registrace-uspesna');
+			// Even if Ecomail returns redirect/opaque response
+			// we still continue because subscriber was usually added correctly
+			if (!response.ok && response.type !== 'opaque') {
+				throw new Error('Subscription failed');
+			}
+
+			toast.success('Úspěšně přihlášeno!');
+
+			// Reset form
+			name = '';
+			surname = '';
+			email = '';
+
+			// Redirect
+			await goto('/registrace-uspesna');
 		} catch (error) {
 			console.error('Subscription error:', error);
-			toast.error('Něco se nepovedlo. Zkontrolujte prosím připojení.');
+
+			toast.error('Nepodařilo se odeslat ulář.');
+		} finally {
 			isSubmitting = false;
 		}
 	}
@@ -49,7 +70,8 @@
 		class="relative flex flex-col items-center justify-center w-full max-w-[1200px] mx-auto text-center px-4"
 	>
 		<!-- Logo (Copied styling from Hero) -->
-		<img decoding="async"
+		<img
+			decoding="async"
 			src="/assets/addpics/logo.webp"
 			alt="Logo"
 			class="z-10 h-[80px] w-auto select-none pointer-events-none"
@@ -83,7 +105,8 @@
 
 		<!-- Image under heading -->
 		<div class="z-10 mt-8 w-full max-w-[600px] md:px-0">
-			<img decoding="async"
+			<img
+				decoding="async"
 				src="/assets/addpics/majk.webp"
 				alt="Majk"
 				class="w-full h-auto rounded-[20px] shadow-lg object-cover select-none pointer-events-none"
@@ -104,7 +127,8 @@
 				<div class="flex flex-col gap-3">
 					<!-- Item 1 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img decoding="async"
+						<img
+							decoding="async"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -119,7 +143,8 @@
 
 					<!-- Item 2 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img decoding="async"
+						<img
+							decoding="async"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -134,7 +159,8 @@
 
 					<!-- Item 3 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img decoding="async"
+						<img
+							decoding="async"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -151,7 +177,8 @@
 
 					<!-- Item 4 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img decoding="async"
+						<img
+							decoding="async"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -167,7 +194,8 @@
 
 					<!-- Item 5 -->
 					<div class="flex items-start gap-2 md:gap-3">
-						<img decoding="async"
+						<img
+							decoding="async"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
@@ -187,7 +215,8 @@
 
 				<!-- Arrow pointing down -->
 				<div class="flex justify-center mt-10">
-					<img decoding="async"
+					<img
+						decoding="async"
 						src="/assets/addpics/šipkaaaaaaaaaaaa.svg"
 						alt="Šipka"
 						class="w-10 h-auto opacity-95 select-none pointer-events-none"
@@ -277,7 +306,8 @@
 
 					<!-- Overlapping Reviews/Avatars & Rating -->
 					<div class="mt-2 flex justify-center w-full">
-						<img decoding="async"
+						<img
+							decoding="async"
 							src="/assets/addpics/formreview.webp"
 							alt="Hodnocení"
 							class="w-[260px] md:w-[280px] h-auto select-none pointer-events-none"
