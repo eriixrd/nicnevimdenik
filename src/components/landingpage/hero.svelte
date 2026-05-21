@@ -3,6 +3,7 @@
 
 <svelte:head>
 	<link rel="preconnect" href="https://player.vimeo.com">
+	<link rel="preload" as="document" href="https://player.vimeo.com/video/1193758413?h=5e3bc3c930&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1">
 	<script src="https://player.vimeo.com/api/player.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
 </svelte:head>
