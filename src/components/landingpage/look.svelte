@@ -12,7 +12,6 @@
 
 		if (isSubmitting) return;
 
-		// Basic validation
 		if (!name.trim() || !surname.trim() || !email.trim()) {
 			toast.error('Vyplňte prosím všechna pole.');
 			return;
@@ -21,40 +20,28 @@
 		isSubmitting = true;
 
 		try {
-			const formData = new FormData();
+			const response = await fetch('/api/subscribe', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ name, surname, email })
+			});
 
-			// Ecomail field names
-			formData.append('name', name);
-			formData.append('surname', surname);
-			formData.append('email', email);
+			const data = await response.json();
 
-			const response = await fetch(
-				'https://nanoczm.ecomailapp.cz/public/subscribe/5/ed07fd6b07ff0199fabc8509f995f058',
-				{
-					method: 'POST',
-					body: formData
-				}
-			);
-
-			// Even if Ecomail returns redirect/opaque response
-			// we still continue because subscriber was usually added correctly
-			if (!response.ok && response.type !== 'opaque') {
-				throw new Error('Subscription failed');
+			if (!response.ok) {
+				throw new Error(data.error || 'Nepodařilo se odeslat formulář.');
 			}
 
 			toast.success('Úspěšně přihlášeno!');
 
-			// Reset form
 			name = '';
 			surname = '';
 			email = '';
 
-			// Redirect
 			await goto('/registrace-uspesna');
 		} catch (error) {
 			console.error('Subscription error:', error);
-
-			toast.error('Nepodařilo se odeslat ulář.');
+			toast.error(error instanceof Error ? error.message : 'Nepodařilo se odeslat formulář.');
 		} finally {
 			isSubmitting = false;
 		}
@@ -69,7 +56,7 @@
 	<div
 		class="relative flex flex-col items-center justify-center w-full max-w-[1200px] mx-auto text-center px-4"
 	>
-		<!-- Logo (Copied styling from Hero) -->
+		<!-- Logo -->
 		<img
 			decoding="async"
 			src="/assets/addpics/logo.webp"
@@ -80,7 +67,7 @@
 			style="max-width:160px; image-rendering: -webkit-optimize-contrast;"
 		/>
 
-		<!-- Tag Badge (Copied styling from Hero) -->
+		<!-- Tag Badge -->
 		<div
 			class="z-10 px-4 py-1.5 bg-gradient-to-r from-[#4B1F7A] via-[#8724C9] to-[#4B1F7A] rounded-[10px] shadow-lg cursor-default"
 		>
@@ -89,7 +76,7 @@
 			</span>
 		</div>
 
-		<!-- Heading (Copied styling from Hero with exact line wrapping from the image) -->
+		<!-- Heading -->
 		<h1
 			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[36px] md:text-[40px] text-white text-nowrap font-extrabold leading-tight"
 		>
@@ -115,7 +102,7 @@
 			/>
 		</div>
 
-		<!-- "Co vše dostanete" Lavender Card -->
+		<!-- Card -->
 		<div class="z-10 -mt-14 w-full max-w-[650px] px-2 md:px-0">
 			<div class="w-full bg-[#E7E1FB] rounded-[20px] p-6 md:p-8 flex flex-col text-[#000000] gap-1">
 				<h3
@@ -213,7 +200,7 @@
 					</div>
 				</div>
 
-				<!-- Arrow pointing down -->
+				<!-- Arrow -->
 				<div class="flex justify-center mt-10">
 					<img
 						decoding="async"
@@ -251,7 +238,7 @@
 					nahlédnutím do našeho portfolia
 				</p>
 
-				<!-- Sign up Form Container -->
+				<!-- Form -->
 				<form
 					on:submit={handleSubmit}
 					class="mt-8 flex flex-col gap-3.5 w-full max-w-[480px] mx-auto"
@@ -304,7 +291,7 @@
 						odhlásit jedním kliknutím.
 					</p>
 
-					<!-- Overlapping Reviews/Avatars & Rating -->
+					<!-- Reviews -->
 					<div class="mt-2 flex justify-center w-full">
 						<img
 							decoding="async"
