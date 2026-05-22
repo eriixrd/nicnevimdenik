@@ -6,16 +6,23 @@ import { ECOMAIL_API_KEY } from '$env/static/private';
 const ECOMAIL_LIST_ID = 5;
 
 export const POST: RequestHandler = async ({ request }) => {
-    const { name, surname, email } = await request.json();
-
-    if (!name?.trim() || !surname?.trim() || !email?.trim()) {
-        return json(
-            { error: 'Vyplňte prosím všechna pole.' },
-            { status: 400 }
-        );
-    }
-
     try {
+        const { name, surname, email } = await request.json();
+
+        if (!name?.trim() || !surname?.trim() || !email?.trim()) {
+            return json(
+                {
+                    error: 'Vyplňte prosím všechna pole.'
+                },
+                {
+                    status: 400
+                }
+            );
+        }
+
+        console.log('API KEY EXISTS:', !!ECOMAIL_API_KEY);
+        console.log('LIST ID:', ECOMAIL_LIST_ID);
+
         const response = await fetch(
             `https://api2.ecomailapp.cz/lists/${ECOMAIL_LIST_ID}/subscribe`,
             {
@@ -38,24 +45,35 @@ export const POST: RequestHandler = async ({ request }) => {
             }
         );
 
+        const responseText = await response.text();
+
+        console.log('ECOMAIL STATUS:', response.status);
+        console.log('ECOMAIL RESPONSE:', responseText);
+
         if (!response.ok) {
-            const errorText = await response.text();
-
-            console.error(errorText);
-
             return json(
-                { error: 'Nepodařilo se přihlásit.' },
-                { status: 500 }
+                {
+                    error: responseText || 'Nepodařilo se přihlásit.'
+                },
+                {
+                    status: 500
+                }
             );
         }
 
-        return json({ success: true });
+        return json({
+            success: true
+        });
     } catch (error) {
-        console.error(error);
+        console.error('SERVER ERROR:', error);
 
         return json(
-            { error: 'Server error.' },
-            { status: 500 }
+            {
+                error: 'Server error.'
+            },
+            {
+                status: 500
+            }
         );
     }
 };
