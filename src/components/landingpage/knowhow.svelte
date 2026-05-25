@@ -32,46 +32,46 @@
 				style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
 			>
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/knowhow.webp"
 					alt="Know-how Preview"
 					class="w-full h-auto rounded-[10px] select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 		</div>
 		<div class="flex items-center justify-center mt-4 w-full mb-5">
 			<div class="flex-1 flex justify-end">
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/cclogo.webp"
 					alt="Czech Crunch Logo"
 					class="h-[40px] md:h-[60px] w-auto mr-[40px] md:mr-[130px] opacity-70 hover:opacity-100 transition-all duration-300 select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 
 			<div class="flex-none">
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/LC_logo_blackBG_02_2.webp"
 					alt="LC Logo"
 					class="w-[40px] md:w-[63px] opacity-70 hover:opacity-100 transition-all duration-300 select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 
 			<div class="flex-1 flex justify-start">
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/forbeslogo.webp"
 					alt="Forbes Logo"
 					class="w-[100px] h-auto md:w-[169px] ml-[34px] md:ml-[120px] opacity-70 hover:opacity-100 transition-all duration-300 select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 		</div>
@@ -92,24 +92,24 @@
 			<!-- Sketch 1 (Reddit) - Top on mobile, Right on desktop -->
 			<div class="relative overflow-hidden p-px w-full md:max-w-[400px] order-1 md:order-2">
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/Email for fast sketching (1) 3.webp"
 					alt="Email Sketch 1"
 					class="w-full h-auto select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 
 			<!-- Sketch 2 (Moody's) - Bottom on mobile, Left on desktop -->
 			<div class="relative overflow-hidden p-px w-full md:max-w-[400px] order-2 md:order-1">
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/Email for fast sketching (2) 3.webp"
 					alt="Email Sketch 2"
 					class="w-full h-auto select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 		</div>

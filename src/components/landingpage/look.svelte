@@ -58,12 +58,12 @@
 	>
 		<!-- Logo -->
 		<img
-			decoding="async"
+			decoding="sync"
 			src="/assets/addpics/logo.webp"
 			alt="Logo"
 			class="z-10 h-[80px] w-auto select-none pointer-events-none"
 			draggable="false"
-			loading="lazy"
+			loading="eager"
 			style="max-width:160px; image-rendering: -webkit-optimize-contrast;"
 		/>
 
@@ -93,12 +93,12 @@
 		<!-- Image under heading -->
 		<div class="z-10 mt-8 w-full max-w-[600px] md:px-0">
 			<img
-				decoding="async"
+				decoding="sync"
 				src="/assets/addpics/majk.webp"
 				alt="Majk"
 				class="w-full h-auto rounded-[20px] shadow-lg object-cover select-none pointer-events-none"
 				draggable="false"
-				loading="lazy"
+				loading="eager"
 			/>
 		</div>
 
@@ -115,12 +115,12 @@
 					<!-- Item 1 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img
-							decoding="async"
+							decoding="sync"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
-							loading="lazy"
+							loading="eager"
 						/>
 						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Deníky Nic Nevim</strong> - Jak
@@ -131,12 +131,12 @@
 					<!-- Item 2 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img
-							decoding="async"
+							decoding="sync"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
-							loading="lazy"
+							loading="eager"
 						/>
 						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Aktuální příležitosti</strong>, které
@@ -147,12 +147,12 @@
 					<!-- Item 3 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img
-							decoding="async"
+							decoding="sync"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
-							loading="lazy"
+							loading="eager"
 						/>
 						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Jednorázový snímek našeho</strong><br
@@ -165,12 +165,12 @@
 					<!-- Item 4 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img
-							decoding="async"
+							decoding="sync"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
-							loading="lazy"
+							loading="eager"
 						/>
 						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							<strong class="font-extrabold text-[#000000]">Rozbor našich reálných obchodů</strong
@@ -182,12 +182,12 @@
 					<!-- Item 5 -->
 					<div class="flex items-start gap-2 md:gap-3">
 						<img
-							decoding="async"
+							decoding="sync"
 							src="/assets/icons/Checkmark.webp"
 							alt="Check"
 							class="w-4 h-4 md:w-[18px] md:h-[18px] shrink-0 mt-[5px] select-none pointer-events-none"
 							draggable="false"
-							loading="lazy"
+							loading="eager"
 						/>
 						<p class="text-[15px] md:text-[18px] font-normal text-left leading-relaxed">
 							Koukáte přes rameno člověku, který<br class="block md:hidden" /> se podílí na
@@ -203,12 +203,12 @@
 				<!-- Arrow -->
 				<div class="flex justify-center mt-10">
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/addpics/šipkaaaaaaaaaaaa.svg"
 						alt="Šipka"
 						class="w-10 h-auto opacity-95 select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 				</div>
 
@@ -294,12 +294,12 @@
 					<!-- Reviews -->
 					<div class="mt-2 flex justify-center w-full">
 						<img
-							decoding="async"
+							decoding="sync"
 							src="/assets/addpics/formreview.webp"
 							alt="Hodnocení"
 							class="w-[260px] md:w-[280px] h-auto select-none pointer-events-none"
 							draggable="false"
-							loading="lazy"
+							loading="eager"
 							style="image-rendering: -webkit-optimize-contrast;"
 						/>
 					</div>

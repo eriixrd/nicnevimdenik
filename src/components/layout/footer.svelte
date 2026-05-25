@@ -10,12 +10,12 @@
 			<!-- Brand Logo -->
 			<div class="-ml-2">
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/NN logooo 3.webp"
 					alt="Nic Nevim Logo"
 					class="h-[80px] w-auto select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 					style="image-rendering: -webkit-optimize-contrast;"
 				/>
 			</div>
@@ -37,12 +37,12 @@
 			<!-- Payment Icons -->
 			<div>
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/Group 75.webp"
 					alt="Platební metody"
 					class="h-[32px] md:h-[25px] w-auto select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 					style="image-rendering: -webkit-optimize-contrast;"
 				/>
 			</div>
@@ -55,6 +55,17 @@
 				>
 					Zásady ochrany osobních údajů
 				</a>
+				<button
+					type="button"
+					onclick={() => {
+						if (typeof window !== 'undefined' && (window as any).openCookieSettings) {
+							(window as any).openCookieSettings();
+						}
+					}}
+					class="text-[13px] md:text-[12px] text-white/90 hover:text-[#FFC300] transition-colors duration-200 underline decoration-white/30 underline-offset-4 bg-transparent border-none p-0 cursor-pointer text-left focus:outline-none"
+				>
+					Nastavení cookies
+				</button>
 			</div>
 		</div>
 	</div>

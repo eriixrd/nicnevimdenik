@@ -105,12 +105,12 @@
 				style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
 			>
 				<img
-					decoding="async"
+					decoding="sync"
 					src="/assets/addpics/Group_64.webp"
 					alt="Trading Platform Preview"
 					class="w-full h-auto rounded-[20px] select-none pointer-events-none"
 					draggable="false"
-					loading="lazy"
+					loading="eager"
 				/>
 			</div>
 
@@ -121,12 +121,12 @@
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/icons/Kolac.svg"
 						alt="Portfolio Icon"
 						class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 					<h3
 						class="text-white text-[16px] md:text-[24px] font-bold leading-[1.4] md:leading-tight"
@@ -141,12 +141,12 @@
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/icons/globe.svg"
 						alt="Globe Icon"
 						class="w-7 h-7 md:w-10 md:h-10 select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 					<h3
 						class="text-white text-[16px] md:text-[24px] font-bold leading-[1.4] md:leading-tight"
@@ -161,12 +161,12 @@
 					style="background: linear-gradient(135deg, rgba(15, 46, 16, 0.5) 0%, rgba(33, 101, 36, 0.5) 50%, rgba(15, 46, 16, 0.5) 100%);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/icons/graphlines.svg"
 						alt="Trades Icon"
 						class="w-8 h-8 md:w-10 md:h-10 shrink-0 select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 					<h3
 						class="text-white text-[16px] md:text-[24px] font-bold leading-[1.2] md:leading-tight"
@@ -199,13 +199,13 @@
 					class="flex justify-start md:justify-center w-max md:w-full mx-auto px-4 md:max-w-[880px]"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/addpics/graf.webp"
 						alt="Strategy Growth Graph"
 						class="w-[610px] h-auto md:w-full rounded-[20px] shadow-2xl object-cover select-none pointer-events-none"
 						style="image-rendering: -webkit-optimize-contrast;"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 				</div>
 			</div>
@@ -219,12 +219,12 @@
 					aria-label="Scroll left"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/addpics/arrow_11848700 6.webp"
 						alt="Scroll Left"
 						class="w-11 h-auto object-contain select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 				</button>
 
@@ -235,12 +235,12 @@
 					aria-label="Scroll right"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/addpics/arrow_11848700 6.webp"
 						alt="Scroll Right"
 						class="w-11 h-auto object-contain rotate-180 select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 				</button>
 			</div>
@@ -253,12 +253,12 @@
 					style="background: linear-gradient(135deg, rgba(17, 17, 22, 0.7) 0%, rgba(28, 35, 48, 0.7) 50%, rgba(17, 17, 22, 0.7) 100%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/Vector.svg"
 						alt="Diamond Icon"
 						class="w-[27px] h-[21px] object-contain select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 					<h3 class="text-white text-[20px] md:text-[22px] font-bold leading-[1.3] tracking-tight">
 						Cílem naší strategie je<br />dlouhodobé zhodnocení v<br />řádu
@@ -278,12 +278,12 @@
 					style="background: linear-gradient(135deg, rgba(17, 17, 22, 0.7) 0%, rgba(28, 35, 48, 0.7) 50%, rgba(17, 17, 22, 0.7) 100%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/Vector-1.svg"
 						alt="Bell Icon"
 						class="w-[20px] h-[21px] object-contain select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 					<h3 class="text-white text-[20px] md:text-[22px] font-bold leading-[1.3] tracking-tight">
 						Naše obchody sleduje<br />živě <span class="text-[#D3C295]">přes 450 investorů</span><br
@@ -304,12 +304,12 @@
 					style="background: linear-gradient(135deg, rgba(17, 17, 22, 0.7) 0%, rgba(28, 35, 48, 0.7) 50%, rgba(17, 17, 22, 0.7) 100%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/Vector-2.svg"
 						alt="Shield Icon"
 						class="w-[21px] h-[24px] object-contain select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 					<h3 class="text-white text-[20px] md:text-[22px] font-bold leading-[1.3] tracking-tight">
 						Podílíme se na investicích<br />v řádech
@@ -345,12 +345,12 @@
 					style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); -webkit-box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); will-change: transform; transform: translate3d(0, 0, 0);"
 				>
 					<img
-						decoding="async"
+						decoding="sync"
 						src="/assets/addpics/MMMM1 1.webp"
 						alt="Portfolio Review Chart"
 						class="w-full h-auto rounded-[20px] select-none pointer-events-none"
 						draggable="false"
-						loading="lazy"
+						loading="eager"
 					/>
 				</div>
 			</div>

@@ -2,6 +2,7 @@
   import '../app.css';
   import { onMount } from 'svelte';
   import Footer from '../components/layout/footer.svelte';
+  import Cookie from '../components/layout/cookie.svelte';
   import { Toaster } from 'svelte-sonner';
 
   import { page } from '$app/stores';
@@ -25,6 +26,8 @@
 
   <Footer />
 </div>
+
+<Cookie />
 
 <style>
   :global(body) {

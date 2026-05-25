@@ -27,12 +27,12 @@
 		<!-- Main Image & Overlapping Card Container -->
 		<div class="relative w-full flex flex-col items-center mt-6">
 			<!-- Hoodie Speaker Image -->
-			<img decoding="async"
+			<img decoding="sync"
 				src="/assets/addpics/knowhow.webp"
 				alt="Deník Nic Nevím"
 				class="z-10 w-[88%] h-auto rounded-[15px] shadow-2xl object-cover aspect-[1.58/1] select-none pointer-events-none"
 				draggable="false"
-				loading="lazy"
+				loading="eager"
 				style="image-rendering: -webkit-optimize-contrast;"
 			/>
 
@@ -54,12 +54,12 @@
 			class="z-10 mt-6 w-full border border-white/10 rounded-[15px] p-6 flex flex-col items-center gap-3 shadow-xl"
 		>
 			<!-- Gold Info SVG Icon -->
-			<img decoding="async"
+			<img decoding="sync"
 				src="/assets/icons/info.svg"
 				alt="Info"
 				class="w-6 h-6 select-none pointer-events-none"
 				draggable="false"
-				loading="lazy"
+				loading="eager"
 			/>
 
 			<p class="text-white text-[15px] md:text-[16px] font-medium leading-[1.5] text-center">
