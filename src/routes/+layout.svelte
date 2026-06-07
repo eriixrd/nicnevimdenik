@@ -19,7 +19,7 @@
 
 <Toaster richColors position="top-right" />
 
-<div class="min-h-screen bg-bg-dark text-slate-200 flex flex-col">
+<div class="min-h-screen bg-bg-dark text-slate-200 flex flex-col w-full max-w-full overflow-x-hidden">
   <main class="flex-1">
     <slot />
   </main>
@@ -30,7 +30,9 @@
 <Cookie />
 
 <style>
+  :global(html),
   :global(body) {
+    max-width: 100%;
     overflow-x: hidden;
   }
 </style>

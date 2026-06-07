@@ -86,7 +86,7 @@
 		</h1>
 
 		<p
-			class="z-10 mt-4 px-4 max-w-[950px] text-center text-[20px] md:text-[24px] text-nowrap text-white font-medium leading-[160%]"
+			class="z-10 mt-4 px-4 max-w-[950px] text-center text-[4.2vw] sm:text-[20px] md:text-[24px] text-nowrap text-white font-medium leading-[160%]"
 		>
 			Nebudu vám slibovat rychlý zisk. <br />
 			Ukážu vám, jak nad trhem přemýšlí <br />

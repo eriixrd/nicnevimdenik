@@ -14,7 +14,7 @@
 
 		<!-- Heading (Matching Hero Title styles) -->
 		<h2
-			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[36px] md:text-[40px] text-nowrap text-white font-extrabold leading-tight"
+			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[6.5vw] sm:text-[32px] md:text-[40px] text-nowrap text-white font-extrabold leading-tight"
 		>
 			Tohle jsou <span class="text-[#FFBA00]">3 klíčové</span><br />
 			<span class="text-[#FFBA00]">věci,</span> které změní váš<br />

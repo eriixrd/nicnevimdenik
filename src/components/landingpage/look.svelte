@@ -78,7 +78,7 @@
 
 		<!-- Heading -->
 		<h1
-			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[36px] md:text-[40px] text-white text-nowrap font-extrabold leading-tight"
+			class="z-10 mt-6 max-w-[950px] px-4 text-center text-[5.8vw] sm:text-[32px] md:text-[40px] text-white text-nowrap font-extrabold leading-tight"
 		>
 			Nahlédněte <span class="font-['Playball'] text-[#FFBA00] font-normal">do našeho</span>
 			<br />
