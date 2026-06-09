@@ -1,8 +1,11 @@
 <script lang="ts">
 	import '../app.css';
+	import { onMount } from 'svelte';
 	import Footer from '../components/layout/footer.svelte';
 	import { Toaster } from 'svelte-sonner';
 	import Cookie from '../components/layout/cookie.svelte';
+
+	onMount(() => {});
 </script>
 
 <svelte:head>
