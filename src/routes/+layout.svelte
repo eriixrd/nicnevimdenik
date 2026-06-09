@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import Footer from '../components/layout/footer.svelte';
 	import { Toaster } from 'svelte-sonner';
+	import Cookie from '../components/layout/cookie.svelte';
 
 	import { page } from '$app/stores';
 
@@ -20,6 +21,7 @@
 </svelte:head>
 
 <Toaster richColors position="top-right" />
+<Cookie />
 
 <div
 	class="min-h-screen bg-bg-dark text-slate-200 flex flex-col w-full max-w-full overflow-x-hidden"
